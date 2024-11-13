@@ -1,0 +1,174 @@
+/*Uses Flexbox at least once throughout 
+the project to create a component or pattern
+
+Grid Based Layout
+Uses CSS Grid at least once throughout 
+the project to create the layout for pages
+*/
+
+/*
+Pages are mobile-friendly and display correctly 
+on all display sizes (mobile, tablet, desktop).
+
+Note: You can simulate Mobile Devices with Device Mode 
+in Chrome DevTools(opens in a new tab).
+
+Tip: Ensure that all content:
+can be displayed
+is legible/readable
+does not overlap with other content
+does not overflow viewport (content is outside initial view loaded)
+*/
+
+
+
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f9;
+  font-family: Arial, sans-serif;
+
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+      "header header header"
+      "nav main aside"
+      "footer footer footer";
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: auto 1fr auto;
+  gap: 10px;
+  width: 80%;
+  max-width: 1000px;
+}
+
+.nav {
+  grid-area: nav;
+  color: black;
+  padding: 20px;
+  float: right;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+}
+.nav li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.nav li a {
+  color: black;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.nav li a:hover {
+  color: rgba(184, 42, 59, 0.805);
+}
+
+
+.main {
+  grid-area: main;
+  background-color: #93c5fd;
+  color: #333;
+  padding: 20px;
+}
+
+.aside {
+  grid-area: aside;
+  background-color: #2563eb;
+  color: white;
+  padding: 20px;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #1e3a8a;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/*
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+header {
+  padding: 10px 0;
+}
+
+
+nav {
+  float: right;
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.nav-links li a {
+  color: black;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: rgba(184, 42, 59, 0.805);
+}
+
+
+
+.flex-container {
+  display: flex;
+
+}
+
+img{
+  width: 500px;
+  height: 500px;
+  margin: 5px;
+}
+*/
